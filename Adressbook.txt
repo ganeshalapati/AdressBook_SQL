@@ -1,0 +1,34 @@
+***************Addressbook******************
+
+---------------------------------------------
+#UC-1
+
+mysql> create database AddressBook;
+Query OK, 1 row affected (0.06 sec)
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| addressbook        |
+| cmd                |
+| cmds               |
+| cmdshakeel         |
+| information_schema |
+| mysql              |
+| mysql2             |
+| ok                 |
+| payroll_service    |
+| performance_schema |
+| sys                |
++--------------------+
+11 rows in set (0.01 sec)
+
+mysql> use addressbook;
+Database changed
+mysql> select database();
++-------------+
+| database()  |
++-------------+
+| addressbook |
++-------------+
+1 row in set (0.00 sec)
