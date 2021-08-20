@@ -73,3 +73,19 @@ mysql> select * from addressbooks;
 |  2 | Alap       | ABID     | MATKERWADI | CADONI  | 510302 |  8374757047 |
 |  3 | Alap       | IRONMAN  | MATKERWADI | CMADONI | 510302 |  9985748631 |
 +----+-----------+----------+----------------------------------------------
+--------------------------------------------------------------------------------
+#UC-4
+
+mysql> update addressbooks set firstname = 'TONY' where lastname ='IRONMAN';
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select * from addressbooks;
++----+-----------+----------+------------+---------+--------+-------------+
+| id | firstname | lastname | address    | city    | zip    | phonenumber |
++----+-----------+----------+------------+---------+--------+-------------+
+|  1 | Alap       | Ganesh  | MATKERWADI | ADONI   | 510301 |  9581477386  | 
+|  2 | Alap       | ABID     | MATKERWADI | CADONI  | 510302 |  8374757047 |
+|  3 | TONY       | IRONMAN  | MATKERWADI | CMADONI | 510302 |  9985748631 |
++----+-----------+----------+------------+---------+--------+-------------+
+3 rows in set (0.01 sec)
