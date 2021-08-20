@@ -103,3 +103,14 @@ mysql> select * from addressbooks;
 |  2 | Alap       | ABID     | MATKERWADI | CADONI | 510302 |  8374757047 |
 +----+-----------+----------+------------+--------+--------+-------------+
 2 rows in set (0.01 sec)
+---------------------------------------------------------------------------------
+
+ again adding names in a table
+
+mysql> select lastname from addressbooks where city='ADONI';
++----------+
+| lastname |
++----------+
+| Ganesh   |
++----------+
+1 row in set (0.00 sec)
