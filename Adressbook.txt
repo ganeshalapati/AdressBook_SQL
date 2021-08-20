@@ -56,3 +56,20 @@ mysql> describe addressbooks
 | phonenumber | int          | NO   |     | NULL    |                |
 +-------------+--------------+------+-----+---------+----------------+
 7 rows in set (0.05 sec)
+#UC-3
+
+mysql> insert into addressbooks(firstname, lastname, address, city, zip, phonenumber) VALUES
+    -> ('Alap', 'Ganesh', 'MATKERWADI', 'ADONI', '510301', '958146'),
+    -> ('Alap', 'ABID', 'MATKERWADI', 'CADONI', '510302', '83047'),
+    -> ('Alap', 'IRONMAN', 'MATKERWADI', 'CMADONI', '510302', '83047');
+Query OK, 3 rows affected (0.04 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> select * from addressbooks;
++----+-----------+----------+------------+---------+--------+-------------+
+| id | firstname | lastname | address    | city    | zip    | phonenumber |
++----+-----------+----------+------------+---------+--------+-------------+
+|  1 | Alap       | Ganesh  | MATKERWADI | ADONI   | 510301 |  9581477386 |
+|  2 | Alap       | ABID     | MATKERWADI | CADONI  | 510302 |  8374757047 |
+|  3 | Alap       | IRONMAN  | MATKERWADI | CMADONI | 510302 |  9985748631 |
++----+-----------+----------+----------------------------------------------
