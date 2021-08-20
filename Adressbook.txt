@@ -132,4 +132,3 @@ mysql> select count(lastname) from addressbooks group by city;
 |               1 |
 |               1 |
 +-----------------+
-3 rows 
