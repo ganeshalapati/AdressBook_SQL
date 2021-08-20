@@ -89,3 +89,17 @@ mysql> select * from addressbooks;
 |  3 | TONY       | IRONMAN  | MATKERWADI | CMADONI | 510302 |  9985748631 |
 +----+-----------+----------+------------+---------+--------+-------------+
 3 rows in set (0.01 sec)
+------------------------------------------------------------------------------
+#UC-5
+
+mysql> delete from addressbooks where firstname ='TONY';
+Query OK, 1 row affected (0.02 sec)
+
+mysql> select * from addressbooks;
++----+-----------+----------+------------+--------+--------+-------------+
+| id | firstname | lastname | address    | city   | zip    | phonenumber |
++----+-----------+----------+------------+--------+--------+-------------+
+|  1 | Alap       | Ganesh   | MATKERWADI | ADONI  | 510301 |  9581477386 |
+|  2 | Alap       | ABID     | MATKERWADI | CADONI | 510302 |  8374757047 |
++----+-----------+----------+------------+--------+--------+-------------+
+2 rows in set (0.01 sec)
