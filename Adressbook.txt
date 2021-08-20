@@ -9,14 +9,9 @@ mysql> show databases;
 +--------------------+
 | Database           |
 +--------------------+
-| addressbook        |
-| cmd                |
-| cmds               |
-| cmdshakeel         |
-| information_schema |
+| addressbook        |         |
 | mysql              |
 | mysql2             |
-| ok                 |
 | payroll_service    |
 | performance_schema |
 | sys                |
